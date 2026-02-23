@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@theme {
+  --dark-mode: selector;
+  --color-thriv-bg: #ffffff;
+  --color-thriv-frame: #151619;
+  --color-thriv-blue: #2463eb;
+  --color-thriv-border-blue: #1e40af;
+  --color-thriv-text-gray: #475569;
+  --color-thriv-secondary: #151619;
+  --color-thriv-btn-bg: #1c1d21;
+
+  /* Semantic Text Colors */
+  --color-thriv-text-heading: #282C35;
+  --color-thriv-text-body: #878E9C;
+  --color-thriv-text-muted: #B5B9C2;
+  --color-thriv-text-dark: #2D313D;
+  --color-thriv-accent: #2663FF;
+  --color-primary-text: #2663FF;
+
+  /* Gradient Colors */
+  --color-thriv-gradient-1: #EEF4FF;
+  --color-thriv-gradient-2: #F5F9FF;
+  --color-thriv-gradient-3: #E8F1FF;
+
+  --font-inter: "Inter", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+  --font-dm-sans: "DM Sans", sans-serif;
+
+  --shadow-thriv-glow: 0 0 10px rgba(37, 99, 235, 0.3);
+
+  --animate-fade-in-up: fadeInUp 0.6s ease-out forwards;
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  --animate-infinite-scroll: infinite-scroll 25s linear infinite;
+
+  @keyframes infinite-scroll {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    @apply bg-white dark:bg-[#0c0d10] text-[#2c313c] dark:text-gray-100 font-inter min-h-screen transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .outer-frame {
+    @apply border border-thriv-blue/40 rounded-[28px] overflow-hidden;
+  }
+
+  .btn-primary {
+    @apply bg-thriv-blue text-white px-7 py-3 rounded-full font-medium transition-all hover:brightness-110 shadow-thriv-glow;
+  }
+
+  .btn-action {
+    @apply bg-thriv-btn-bg text-thriv-text-gray px-8 py-3 rounded-xl font-medium transition-all hover:bg-[#2a2b31] border border-white/5;
+  }
+
+  .nav-link {
+    @apply text-thriv-text-gray hover:text-white transition-colors text-sm font-medium px-4;
+  }
+}
