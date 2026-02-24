@@ -15,7 +15,8 @@ const Hero = () => {
             >
                 <source src={heroVideo} type="video/mp4" />
             </video>
-            {/* FIGMA TEXT BOX INTEGRATION */}
+
+         
             <section className="relative lg:absolute lg:top-[286px] lg:left-[272px] w-full lg:w-[808px] px-6 py-24 lg:p-0 z-10 text-left">
                 <motion.h1
                     initial="hidden"

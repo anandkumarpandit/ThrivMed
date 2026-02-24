@@ -33,6 +33,7 @@ const Testimonial = () => {
           className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
         >
           <div className="flex items-center justify-center md:justify-start [&_div]:mx-1.5 animate-infinite-scroll whitespace-nowrap hover:[animation-play-state:paused]">
+
             {/* 1st Original Card */}
             <div className="w-[280px] lg:w-[340px] shrink-0 bg-gray-100 dark:bg-[#151619] rounded-[30px] p-6 sm:p-8 flex flex-col justify-between min-h-[320px] lg:min-h-[420px] whitespace-normal transition-colors">
               <div className="flex justify-between items-center mb-8">
@@ -93,7 +94,7 @@ const Testimonial = () => {
             </div>
 
             {/* --- DUPLICATE CARDS --- */}
-            {/* 1st Duplicate Card */}
+           
             <div className="w-[280px] lg:w-[340px] shrink-0 bg-gray-100 dark:bg-[#151619] rounded-[30px] p-6 sm:p-8 flex flex-col justify-between min-h-[320px] lg:min-h-[420px] whitespace-normal transition-colors">
               <div className="flex justify-between items-center mb-8">
                 <h3 className="text-lg sm:text-xl font-normal text-gray-900 dark:text-gray-100">

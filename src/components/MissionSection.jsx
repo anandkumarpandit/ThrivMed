@@ -8,13 +8,10 @@ import sparkleIcon from "../assets/image3.svg";
 const MissionSection = () => {
   return (
     <section className="w-full mt-[-30px] px-0 md:px-[4%] lg:px-[10%] lg:h-auto h-auto bg-white dark:bg-[#0c0d10] font-dm-sans lg:-translate-y-20 transition-colors duration-300">
-
-     
       <div className="w-full max-w-[1400px] mx-auto px-0 md:px-0 lg:px-6 py-10">
-
+        
         {/* ================= DESKTOP HEADER =============== */}
         <div className="hidden lg:block relative h-[280px]">
-
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -58,7 +55,6 @@ const MissionSection = () => {
 
         {/* ================= MOBILE HEADER ================= */}
         <div className="lg:hidden flex flex-col gap-3 mb-6 px-3">
-
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -87,16 +83,14 @@ const MissionSection = () => {
 
         {/* ================= BLUE OUTER CONTAINER ================= */}
         <div className="w-full bg-sky-100 dark:bg-sky-950 rounded-[10px] lg:rounded-[20px] p-2 shadow-[0px_3px_15px_rgba(228,241,254,0.81)] dark:shadow-sky-900/20 transition-colors">
-
           <div className="flex flex-col lg:grid lg:grid-cols-[1.4fr_1fr] gap-2">
-
             {/* ================= IMAGE CARD ================= */}
             <div
               className="order-1 lg:order-2 relative rounded-[10px] lg:rounded-[20px] overflow-hidden flex flex-col justify-end items-start p-4 lg:p-6 h-[300px] lg:h-[400px]"
               style={{
                 backgroundImage: `url(${doctorImage})`,
                 backgroundSize: "cover",
-                backgroundPosition: "center"
+                backgroundPosition: "center",
               }}
             >
               <div className="absolute inset-0 bg-gradient-to-t from-sky-100/60 dark:from-sky-950/80 via-transparent to-transparent"></div>
@@ -119,7 +113,6 @@ const MissionSection = () => {
 
             {/* ================= WHITE CONTENT CARD ================= */}
             <div className="order-2 lg:order-1 bg-white dark:bg-[#151619] rounded-lg lg:rounded-2xl p-4 lg:p-6 shadow-lg flex flex-col justify-between transition-colors">
-
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -133,10 +126,13 @@ const MissionSection = () => {
 
                 <div>
                   <span className="text-gray-800 dark:text-gray-200 text-sm lg:text-lg font-light leading-relaxed">
-                    A Consolidated place to monitor your health for every upcoming risk
+                    A Consolidated place to monitor your health for every
+                    upcoming risk
                   </span>
                   <span className="text-zinc-400 dark:text-gray-400 text-sm lg:text-lg font-light leading-relaxed">
-                    , increasing interactivity with all medical reports for full transparency and reducing hospital visits and reducing costs.
+                    , increasing interactivity with all medical reports for full
+                    transparency and reducing hospital visits and reducing
+                    costs.
                   </span>
                 </div>
               </motion.div>
@@ -154,8 +150,16 @@ const MissionSection = () => {
 
                 <div className="flex justify-end items-end bg-zinc-100 dark:bg-gray-800 rounded-[41.75px] p-1">
                   <div className="flex -space-x-3">
-                    <img src={image1} alt="" className="w-10 h-10 rounded-full object-cover border-2 border-white dark:border-[#151619]" />
-                    <img src={maskGroup} alt="" className="w-10 h-10 rounded-full object-cover border-2 border-white dark:border-[#151619]" />
+                    <img
+                      src={image1}
+                      alt=""
+                      className="w-10 h-10 rounded-full object-cover border-2 border-white dark:border-[#151619]"
+                    />
+                    <img
+                      src={maskGroup}
+                      alt=""
+                      className="w-10 h-10 rounded-full object-cover border-2 border-white dark:border-[#151619]"
+                    />
                   </div>
 
                   <div className="ml-[-10px] px-4 py-2 bg-white dark:bg-gray-900 rounded-[68px]">
@@ -168,12 +172,9 @@ const MissionSection = () => {
                   </div>
                 </div>
               </motion.div>
-
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
   );
