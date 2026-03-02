@@ -6,7 +6,7 @@ import image2 from "../assets/image2.jpg";
 const Testimonial = () => {
   return (
     <section className="w-full mt-[-20px] lg:-translate-y-31">
-      <div className="max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-24">
+      <div className="max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-45">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -15,11 +15,11 @@ const Testimonial = () => {
           viewport={{ once: true }}
           className="mb-16 sm:mb-12 lg:mb-20 lg:px-9"
         >
-          <p className="text-lg sm:text-xl font-semibold text-gray-400 lg:-mt-8 xl:mt-0 mb-4 -mt-10 sm:mt-0">
+          <p className="text-lg sm:text-xl font-semibold text-gray-400 lg:-mt-8 xl:mt-0 lg:ml-14 mb-4 -mt-10 sm:mt-0">
             Testimonials
           </p>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-gray-900 dark:text-gray-100 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-gray-900 dark:text-gray-100 lg:ml-14 leading-tight">
             What our Clients Say
           </h2>
         </motion.div>

@@ -24,7 +24,6 @@ const itemVariants = {
 const DigitalTwinSection = () => {
   return (
     <div className="w-full px-[5%] md:px-[10%] animate-fade-in-up flex flex-col lg:h-screen h-auto min-h-[600px] justify-center py-10 sm:py-16 lg:pt-2 lg:pb-12 element-section">
-
       {/* Header Content */}
       <motion.div
         className="mb-8 sm:mb-12 lg:mb-12"
@@ -72,7 +71,6 @@ const DigitalTwinSection = () => {
         viewport={{ once: true }}
         variants={containerVariants}
       >
-        
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-500/10 via-transparent to-transparent pointer-events-none" />
 
         {/* Arrow Icon - Extreme Scaling Position */}
@@ -91,7 +89,6 @@ const DigitalTwinSection = () => {
         />
 
         <div className="frame-wrapper relative z-10 flex flex-col justify-between gap-[clamp(2.5rem,6vh,4rem)]">
-
           {/* Top Content (Frame-3) */}
           <div className="frame-3 max-w-[min(100%,600px)] pr-12 sm:pr-0">
             <motion.h2
@@ -104,9 +101,9 @@ const DigitalTwinSection = () => {
               variants={itemVariants}
               className="text-wrapper-3 text-[#878e9c] dark:text-gray-400 text-[clamp(0.85rem,2vw,18px)] font-light leading-relaxed tracking-[0] font-dm-sans self-stretch"
             >
-              Your body isn’t a toy its a biological machine. Lorem ipsum dolor
-              sit amet. Non aliquam voluptate qui veniam unde aut autem fugiat
-              ut rerum dolorem.
+              Everything looks normal. But underneath... problems are building.
+              Every condition you face, has a reason. 10 - 20 tests dont cover
+              them.
             </motion.p>
           </div>
 
@@ -121,9 +118,7 @@ const DigitalTwinSection = () => {
                 Medical Experts available at your touch
               </motion.h1>
 
-       
               <div className="w-full lg:w-auto flex flex-col items-center lg:items-start gap-6 lg:gap-4">
-               
                 <motion.p
                   variants={itemVariants}
                   className="lg:hidden text-[#878e9c] dark:text-gray-400 text-[clamp(0.85rem,2vw,18px)] font-light font-dm-sans text-center max-w-[480px] leading-relaxed"
@@ -136,7 +131,6 @@ const DigitalTwinSection = () => {
                   </strong>
                 </motion.p>
 
-             
                 <motion.button
                   className="bg-[#2663FF] text-white px-8 py-3 rounded-full text-[clamp(14px,1.5vw,16px)] font-medium transition-all hover:bg-blue-600 shadow-lg shadow-blue-500/20"
                   whileHover={{ scale: 1.02 }}
@@ -147,7 +141,6 @@ const DigitalTwinSection = () => {
               </div>
             </div>
 
-            
             <motion.p
               variants={itemVariants}
               className="hidden lg:block absolute bottom-0 right-1 text-[#878e9c] dark:text-gray-400 text-[18px] font-light font-dm-sans text-right max-w-[476px] leading-[1.4]"

@@ -43,7 +43,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="w-full mt-[-70px] lg:-translate-y-20 bg-white dark:bg-[#0c0d10] py-20 lg:pt-0 px-4 sm:px-6 md:px-10 lg:px-[8%] transition-colors duration-300">
+    <section className="w-full lg:mt-[-140px] mt-[-100px]  lg:-translate-y-20 bg-white dark:bg-[#0c0d10] py-20 lg:pt-0 px-4 sm:px-6 md:px-10 lg:px-[8%] transition-colors duration-300">
       <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-16">
         {/* LEFT TITLE */}
         <div className="lg:w-[40%]">

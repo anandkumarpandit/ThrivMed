@@ -103,7 +103,7 @@ const MissionSection = () => {
                 className="relative z-10"
               >
                 <h4 className="text-zinc-700 dark:text-gray-100 font-semibold text-sm lg:text-xl">
-                  Striving to be better
+                  Dr Andres Zuleta
                 </h4>
                 <p className="mt-1 text-zinc-400 dark:text-gray-300 text-sm lg:text-lg leading-tight max-w-[220px] lg:max-w-[350px]">
                   Better healthcare is not a privilege its a necessity
@@ -121,13 +121,12 @@ const MissionSection = () => {
                 className="flex flex-col gap-6"
               >
                 <div className="text-gray-800 dark:text-gray-100 text-lg lg:text-3xl font-light leading-tight max-w-[320px] lg:max-w-[500px]">
-                  At thrivemed we believe in ease of access for human wellness.
+                 Most comprehensive blood analysis available in the United States.
                 </div>
 
                 <div>
                   <span className="text-gray-800 dark:text-gray-200 text-sm lg:text-lg font-light leading-relaxed">
-                    A Consolidated place to monitor your health for every
-                    upcoming risk
+                   No labs. No waiting. 160+ Biomarkers are processed with a complete map of what is happening into your body. Every health metric you’ve ever known at one place.
                   </span>
                   <span className="text-zinc-400 dark:text-gray-400 text-sm lg:text-lg font-light leading-relaxed">
                     , increasing interactivity with all medical reports for full
