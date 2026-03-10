@@ -39,7 +39,7 @@ export default function ChoosePath() {
             <div className="max-w-[1336px] mx-auto px-6 pt-16 md:pt-24 pb-32">
                 {/* Heading Section */}
                 <div className="w-full md:w-[808px] mb-20 md:mb-32 md:ml-[232px]">
-                    <h1 className="text-[40px] -ml-3 scale-90 lg:-mt-20 md:text-4xl md:-ml-50 leading-[45px] lg:leading-[56px] md:leading-[38px] tracking-[2px] text-Primary-text dark:text-gray-100 font-normal font-['DM_Sans'] lg:-ml-14">
+                    <h1 className="text-[40px] -ml-3 lg:-mt-20 md:text-4xl md:-ml-50 leading-[45px] lg:leading-[43px] scale-90 md:leading-[38px] tracking-[2px] text-Primary-text dark:text-gray-100 font-normal font-['DM_Sans'] lg:-ml-14">
                         Choose the path that's{" "}
                         <br className="hidden md:block" />
                         right for you
