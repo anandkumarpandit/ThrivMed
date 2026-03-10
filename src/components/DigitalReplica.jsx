@@ -20,6 +20,9 @@ export default function DigitalTwin() {
     mt-0 sm:mt-0
     ml-0 sm:ml-0
     
+     md:-mt-6 lg:-mt-18
+    md:-translate-x-19
+    lg:translate-x-0
     lg:pr-7
               "
           >
@@ -31,9 +34,12 @@ export default function DigitalTwin() {
             text-left sm:text-right
     text-1xl sm:text-lg md:text-xl lg:text-[1.5rem]
     font-light
+   
     font-['DM_Sans']
     text-zinc-900 dark:text-gray-400
     leading-5
+   
+  md:-translate-x-5 lg:translate-x-0
     max-w-[320px] sm:max-w-full
     ml-0 sm:ml-0 mt-4 sm:mt-0 lg:-ml-5
             "
@@ -44,13 +50,13 @@ export default function DigitalTwin() {
       </div>
 
       {/* ================= MAIN CONTAINER ================= */}
-      <div className="max-w-[1200px] py-6 sm:py-2 lg:-translate-y-4 lg:mt-12 lg:w-[75%] mx-auto px-2 sm:px-6 lg:px-0 pb-2">
+      <div className="max-w-[1200px] py-6 sm:py-2 md:mt-7 lg:-translate-y-4 lg:mt-12 lg:w-[75%] mx-auto px-2 sm:px-6 lg:px-0 pb-2">
         <div
           className="bg-blue-50 dark:bg-[#151619]
   border border-transparent dark:border-gray-800
   rounded-[30px]
   pt-14 pb-6 sm:py-2 sm:px-5
-  min-h-[500px] sm:min-h-0  lg:min-h-[550px]
+  min-h-[400px] sm:min-h-0 md:min-h-[600px] lg:min-h-[550px]
 overflow-hidden
  -mt-2 sm:mt-0
   transition-colors duration-300"
@@ -96,17 +102,19 @@ leading-[1] sm:leading-[1.3]
              
                translate-x-16
                sm:translate-x-0
-               translate-y-23
+
+               translate-y-8
                sm:translate-y-0 
-                md:translate-x-12
-                lg:translate-x-5
+               md:translate-x-8
+               md:translate-y-38
+               lg:translate-x-5
                 lg:translate-y-20
               "
             >
               <img
                 src={digitalTwinImage}
                 alt="Digital Twin Dashboard"
-                className="h-[250px] w-full scale-108
+                className="h-[250px] w-full sm:scale-108 md:scale-108
     sm:scale-100 sm:h-auto rounded-tl-2xl"
               />
             </div>

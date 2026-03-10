@@ -30,7 +30,7 @@ const Navbar = () => {
 
     return (
         <nav className="relative w-full z-50">
-            <div className="flex justify-between items-center h-[72px] px-10 md:px-24 bg-white dark:bg-[#0c0d10] border-b border-gray-100 dark:border-gray-800 mx-auto w-full max-w-[1920px] transition-colors duration-300">
+            <div className="flex justify-between items-center h-[72px] px-10 lg:px-18 md:px-24 bg-white dark:bg-[#0c0d10] border-b border-gray-100 dark:border-gray-800 mx-auto w-full max-w-[1920px] transition-colors duration-300">
                 <div className="flex items-center lg:gap-[50px]">
                     <div className="flex items-center">
                         <Link
@@ -49,7 +49,7 @@ const Navbar = () => {
                         <li>
                             <Link
                                 to="/"
-                                className={`relative w-fit font-dm-sans font-medium text-[16px] tracking-[0] leading-[normal] transition-colors hover:text-[#2c313c] dark:hover:text-white ${isActive("/") ? "text-[#2c313c] dark:text-white" : "text-[#878e9c] dark:text-gray-400"
+                                className={`relative w-fit font-dm-sans text-[16px] font-normal tracking-[0] leading-[normal] transition-colors hover:text-[#2c313c] dark:hover:text-white ${isActive("/") ? "text-[#2c313c] dark:text-white" : "text-[#878e9c] dark:text-gray-400"
                                     }`}
                             >
                                 Home
@@ -58,10 +58,19 @@ const Navbar = () => {
                         <li>
                             <Link
                                 to="/about"
-                                className={`relative w-fit font-dm-sans font-medium text-[16px] tracking-[0] leading-[normal] transition-colors hover:text-[#2c313c] dark:hover:text-white ${isActive("/about") ? "text-[#2c313c] dark:text-white" : "text-[#878e9c] dark:text-gray-400"
+                                className={`relative w-fit font-dm-sans font-normal text-[16px] tracking-[0] leading-[normal] transition-colors hover:text-[#2c313c] dark:hover:text-white ${isActive("/about") ? "text-[#2c313c] dark:text-white" : "text-[#878e9c] dark:text-gray-400"
                                     }`}
                             >
                                 About Us
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                to="/courses"
+                                className={`relative w-fit font-dm-sans font-normal text-[16px] tracking-[0] leading-[normal] transition-colors hover:text-[#2c313c] dark:hover:text-white ${isActive("/courses") ? "text-[#2c313c] dark:text-white" : "text-[#878e9c] dark:text-gray-400"
+                                    }`}
+                            >
+                                Courses
                             </Link>
                         </li>
                     </ul>
@@ -144,6 +153,16 @@ const Navbar = () => {
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 About Us
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                to="/courses"
+                                className={`block py-2 text-[16px] font-normal font-dm-sans transition-opacity hover:opacity-80 ${isActive("/courses") ? "text-[#2D313D] dark:text-white" : "text-[#878E9C] dark:text-gray-400"
+                                    }`}
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                Courses
                             </Link>
                         </li>
                         <li className="pt-2 border-t border-gray-100 dark:border-gray-800">

@@ -1,5 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -48,9 +48,12 @@ const Footer = () => {
             <span className="hover:text-gray-800 dark:hover:text-gray-200 transition cursor-pointer">
               Thrivemed.ai
             </span>
-            <span className="hover:text-gray-800 dark:hover:text-gray-200 transition cursor-pointer">
+            <Link to="/about" className="hover:text-gray-800 dark:hover:text-gray-200 transition cursor-pointer">
               About us
-            </span>
+            </Link>
+            <Link to="/courses" className="hover:text-gray-800 dark:hover:text-gray-200 transition cursor-pointer">
+              Courses
+            </Link>
           </div>
         </motion.div>
 
