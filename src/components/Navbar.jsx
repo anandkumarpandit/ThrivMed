@@ -30,7 +30,7 @@ const Navbar = () => {
 
     return (
         <nav className="relative w-full z-50">
-            <div className="flex justify-between items-center h-[72px] px-10 lg:px-18 md:px-24 bg-white dark:bg-[#0c0d10] border-b border-gray-100 dark:border-gray-800 mx-auto w-full max-w-[1920px] transition-colors duration-300">
+            <div className="flex justify-between items-center h-[72px] px-10 lg:px-18 md:px-24 bg-white dark:bg-[#0c0d10] mx-auto w-full max-w-[1920px] transition-colors duration-300">
                 <div className="flex items-center lg:gap-[50px]">
                     <div className="flex items-center">
                         <Link

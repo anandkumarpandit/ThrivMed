@@ -48,18 +48,39 @@ const DigitalTwinSection = () => {
             variants={itemVariants}
             className="text-thriv-text-heading dark:text-white text-[clamp(1.4rem,5vw,3.2rem)] font-bold font-dm-sans leading-[1.1] mb-2 mx-auto transition-colors"
           >
-            <span className="span">The future of </span>
-            <span className="text-thriv-accent text-wrapper-2">healthcare</span>
-            <span className="span">
-              {" "}
-              is <br className="hidden sm:block" /> not in hospitals
-            </span>
+<h1
+  className="
+    text-center text-Primary-text font-bold font-['DM_Sans']
+
+    text-xl 
+    sm:text-2xl 
+    md:text-3xl 
+    lg:text-4xl 
+    xl:text-5xl
+ relative lg:-left-[70px]
+    leading-snug md:leading-tight lg:leading-[1.2]
+
+    px-4 sm:px-6 md:px-8
+
+    max-w-[95%] 
+    sm:max-w-[90%] 
+    md:max-w-[80%] 
+    lg:max-w-[900px] 
+    xl:max-w-[1071px]
+
+    
+      lg:whitespace-nowrap
+       lg:scale-85
+  "
+>
+  Thrivemed comprehensive health assessment
+</h1>          
           </motion.h2>
           <motion.p
             variants={itemVariants}
             className="div text-thriv-text-body dark:text-gray-400 text-[clamp(0.9rem,2vw,1.2rem)] font-medium font-dm-sans text-center max-w-[min(100%,40rem)] mx-auto leading-relaxed transition-colors"
           >
-            It's intelligent, personalized, and always with you !
+           Optimize your Heatlh Maximixe your impact, empowering you with precision health to drive your mission
           </motion.p>
         </div>
       </motion.div>
@@ -115,7 +136,7 @@ const DigitalTwinSection = () => {
                 variants={itemVariants}
                 className="text-[#cbced5] dark:text-gray-300 text-[clamp(1.3rem,5vw,40px)] leading-[1.1] sm:leading-tight tracking-[0] font-medium font-dm-sans max-w-[min(100%,500px)] mb-4"
               >
-                Medical Experts available at your touch
+                Medical Experts <br/> available at your touch
               </motion.h1>
 
               <div className="w-full lg:w-auto flex flex-col items-center lg:items-start gap-6 lg:gap-4">

@@ -3,6 +3,26 @@ import { Play, X } from "lucide-react";
 import frame1 from "../assets/Frame1.png";
 import frame2 from "../assets/Frame2.jpg";
 import frame3 from "../assets/Frame3.png";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.2,
+        },
+    },
+};
+
+const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.6, ease: "easeOut" },
+    },
+};
 
 export default function ChoosePath() {
     const [popup, setPopup] = useState(null);
@@ -38,36 +58,53 @@ export default function ChoosePath() {
         <div className="bg-white dark:bg-[#0c0d10] min-h-screen font-dm-sans overflow-x-hidden transition-colors duration-300">
             <div className="max-w-[1336px] mx-auto px-6 pt-16 md:pt-24 pb-32">
                 {/* Heading Section */}
-                <div className="w-full md:w-[808px] mb-20 md:mb-32 md:ml-[232px]">
-                    <h1 className="text-[40px] -ml-3 lg:-mt-20 md:text-4xl md:-ml-50 leading-[45px] lg:leading-[43px] scale-90 md:leading-[38px] tracking-[2px] text-Primary-text dark:text-gray-100 font-normal font-['DM_Sans'] lg:-ml-14">
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    variants={containerVariants}
+                    className="w-full md:w-[808px] mb-20 md:mb-32 md:ml-[232px]"
+                >
+                    <motion.h1 variants={itemVariants} className="text-[40px] -ml-3 lg:-mt-20 md:text-4xl md:-ml-50 leading-[45px] lg:leading-[43px] scale-90 md:leading-[38px] tracking-[2px] text-Primary-text dark:text-gray-100 font-normal font-['DM_Sans'] lg:-ml-16">
                         Choose the path that's{" "}
                         <br className="hidden md:block" />
                         right for you
-                    </h1>
+                    </motion.h1>
 
-                    <div className="w-full md:w-[786.37px] mt-5 text-zinc-400 text-2xl font-medium font-['DM_Sans'] leading-6 text-left lg:-ml-13 -ml-3 md:-ml-57 md:scale-80 lg:scale-90 scale-90">
+                    <motion.div variants={itemVariants} className="w-full md:w-[786.37px] mt-5 text-zinc-400 text-2xl font-medium font-['DM_Sans'] leading-6 text-left lg:-ml-15 -ml-3 md:-ml-57 md:scale-80 lg:scale-90 scale-90">
                         To learn more about our proven
-                        
-                         cellular healing protocols, get
+
+                        cellular healing protocols, get
                         started in one of the following ways.
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
 
                 {/* Cards Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-20">
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    variants={containerVariants}
+                    className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-20"
+                >
                     {cards.map((card, index) => (
-                        <div
+                        <motion.div
+                            variants={itemVariants}
                             key={card.id}
                             onClick={() => setPopup(card)}
-                            className={`group w-[calc(100%+18px)] -ml-2 md:w-[658px] md:ml-0 inline-flex flex-col justify-start items-start gap-5 cursor-pointer lg:scale-65
-      ${index === 0 ? "lg:ml-24 lg:-mt-24" : ""}
+                            className={`group 
+w-[calc(100%+18px)] -ml-2
+md:max-lg:w-[658px] md:max-lg:-ml-6
+inline-flex flex-col justify-start items-start gap-5 cursor-pointer
+lg:scale-67 md:scale-60
+      ${index === 0 ? "lg:ml-23 lg:-mt-24" : ""}
       ${index === 1 ? "lg:-ml-32 lg:-mt-24" : ""}
-      ${index === 2 ? "lg:ml-24 lg:-mt-44" : ""}
+      ${index === 2 ? "lg:ml-24 lg:-mt-50" : ""}
     `}
                         >
                             {/* Image Card */}
                             <div
-                                className="w-full h-50 lg:h-80 rounded-2xl bg-cover bg-center overflow-hidden shadow-sm group-hover:shadow-md transition-shadow duration-300 flex flex-col justify-start items-start"
+                                className="w-full h-50 lg:h-80 md:h-65 rounded-2xl bg-cover bg-center overflow-hidden shadow-sm group-hover:shadow-md transition-shadow duration-300 flex flex-col justify-start items-start"
                                 style={{ backgroundImage: `url(${card.image})` }}
                             >
                                 <div className="self-stretch p-3.5 flex flex-col justify-start items-start gap-2.5">
@@ -93,9 +130,9 @@ export default function ChoosePath() {
                                     {card.description}
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
 
 
                 {/* Glass Popup */}

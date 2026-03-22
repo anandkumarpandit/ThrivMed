@@ -4,7 +4,7 @@ import heroVideo from "../assets/Comp.mp4";
 
 const Hero = () => {
     return (
-        <main className="flex-grow relative bg-[#151619] rounded-[24px] border border-white/5 overflow-hidden min-h-[500px] h-full flex flex-col justify-center">
+        <main className="flex-grow relative bg-[#151619] rounded-[24px] overflow-hidden min-h-[500px] h-full flex flex-col justify-center">
             {/* Background Video */}
             <video
                 autoPlay
@@ -16,7 +16,7 @@ const Hero = () => {
                 <source src={heroVideo} type="video/mp4" />
             </video>
 
-         
+
             <section className="relative lg:absolute lg:top-[286px] lg:left-[272px] w-full lg:w-[808px] px-6 py-24 lg:p-0 z-10 text-left">
                 <motion.h1
                     initial="hidden"

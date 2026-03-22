@@ -1,14 +1,41 @@
 import React from "react";
 import digitalTwinImage from "../assets/Digital Twin.png";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
 
 export default function DigitalTwin() {
   return (
     <section className="w-full bg-white dark:bg-[#0c0d10] overflow-hidden transition-colors duration-300">
       {/* ================= HERO SECTION ================ */}
       <div className="max-w-[1200px] mx-auto px-6 lg:px-0 pt-16 pb-8">
-        <div className="max-w-[880px]">
+        <motion.div
+          className="max-w-[880px]"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={containerVariants}
+        >
           {/* Main Heading */}
-          <h1
+          <motion.h1
+            variants={itemVariants}
             className="
                  text-left sm:text-right
     text-3xl sm:text-xl md:text-4xl lg:text-5xl
@@ -27,9 +54,10 @@ export default function DigitalTwin() {
               "
           >
             Digital Twin is your biological replica
-          </h1>
+          </motion.h1>
 
-          <p
+          <motion.p
+            variants={itemVariants}
             className="
             text-left sm:text-right
     text-1xl sm:text-lg md:text-xl lg:text-[1.5rem]
@@ -45,15 +73,18 @@ export default function DigitalTwin() {
             "
           >
             Everyday you unknowingly you perform activities that could harm you.
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
       </div>
 
       {/* ================= MAIN CONTAINER ================= */}
       <div className="max-w-[1200px] py-6 sm:py-2 md:mt-7 lg:-translate-y-4 lg:mt-12 lg:w-[75%] mx-auto px-2 sm:px-6 lg:px-0 pb-2">
-        <div
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={containerVariants}
           className="bg-blue-50 dark:bg-[#151619]
-  border border-transparent dark:border-gray-800
   rounded-[30px]
   pt-14 pb-6 sm:py-2 sm:px-5
   min-h-[400px] sm:min-h-0 md:min-h-[600px] lg:min-h-[550px]
@@ -63,7 +94,8 @@ overflow-hidden
         >
           {/* Top Left Text */}
           <div className="max-w-none">
-            <h2
+            <motion.h2
+              variants={itemVariants}
               className="
     w-full
 py-1
@@ -80,20 +112,22 @@ leading-[1] sm:leading-[1.3]
               Built from real data about what's happening
               <br className="block sm:hidden" />
               inside you right now.
-            </h2>
-            <p
+            </motion.h2>
+            <motion.p
+              variants={itemVariants}
               className="
                w-full max-w-md relative top-3 sm:top-0 lg:mt-1 px-4 sm:px-0 text-gray-400 dark:text-gray-400 text-lg sm:text-xl font-light text-lg font-['DM_Sans'] leading-4.5 sm:leading-7 lg:leading-4.5
               "
             >
               Your health is not in reports <br className="block sm:hidden" />
               anymore its interactive.
-            </p>
+            </motion.p>
           </div>
 
           {/* Dashboard Image */}
           <div className="sm:-mt-12 mt-9 flex justify-end">
-            <div
+            <motion.div
+              variants={itemVariants}
               className="
                w-[120%]
                sm:w-full
@@ -117,9 +151,9 @@ leading-[1] sm:leading-[1.3]
                 className="h-[250px] w-full sm:scale-108 md:scale-108
     sm:scale-100 sm:h-auto rounded-tl-2xl"
               />
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

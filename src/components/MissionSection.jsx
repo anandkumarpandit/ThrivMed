@@ -29,7 +29,7 @@ const MissionSection = () => {
             viewport={{ once: true }}
             className="absolute right-0 top-[200px] text-right text-zinc-400 dark:text-gray-400 text-xl font-light leading-6 max-w-[350px]"
           >
-            The future of healthcare is not in hospitals
+           Targeting biome systems for identifying root problems
           </motion.div>
 
           <motion.div
@@ -126,12 +126,10 @@ const MissionSection = () => {
 
                 <div>
                   <span className="text-gray-800 dark:text-gray-200 text-sm lg:text-lg font-light leading-relaxed">
-                   No labs. No waiting. 160+ Biomarkers are processed with a complete map of what is happening into your body. Every health metric you’ve ever known at one place.
+                  No labs. No waiting. 160+ Biomarkers are processed with a complete map{" "}
                   </span>
                   <span className="text-zinc-400 dark:text-gray-400 text-sm lg:text-lg font-light leading-relaxed">
-                    , increasing interactivity with all medical reports for full
-                    transparency and reducing hospital visits and reducing
-                    costs.
+                   of what is happening into your body. Every health metric you’ve ever known at one place.
                   </span>
                 </div>
               </motion.div>
