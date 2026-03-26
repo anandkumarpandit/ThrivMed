@@ -10,6 +10,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Courses from "./pages/Courses";
 import Bloodwork from "./pages/Bloodwork";
+import Consult from "./pages/Consult";
+import Training from "./pages/Training";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -32,6 +34,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/bloodwork" element={<Bloodwork />} />
+          <Route path="/consult" element={<Consult />} />
+          <Route path="/training" element={<Training />} />
         </Routes>
       </div>
     </Router>

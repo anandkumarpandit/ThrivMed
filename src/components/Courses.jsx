@@ -94,12 +94,12 @@ export default function ChoosePath() {
                             onClick={() => setPopup(card)}
                             className={`group 
 w-[calc(100%+18px)] -ml-2
-md:max-lg:w-[658px] md:max-lg:-ml-6
+md:max-lg:w-[468px] md:max-lg:-ml-6
 inline-flex flex-col justify-start items-start gap-5 cursor-pointer
 lg:scale-67 md:scale-60
-      ${index === 0 ? "lg:ml-23 lg:-mt-24" : ""}
-      ${index === 1 ? "lg:-ml-32 lg:-mt-24" : ""}
-      ${index === 2 ? "lg:ml-24 lg:-mt-50" : ""}
+      ${index === 0 ? "lg:ml-23 lg:-mt-24 md:-mt-15" : ""}
+      ${index === 1 ? "lg:-ml-32 lg:-mt-24 md:-mt-15 md:-translate-x-21 lg:translate-x-0" : ""}
+      ${index === 2 ? "lg:ml-24 lg:-mt-50 md:-mt-45" : ""}
     `}
                         >
                             {/* Image Card */}

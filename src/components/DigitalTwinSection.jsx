@@ -23,7 +23,7 @@ const itemVariants = {
 
 const DigitalTwinSection = () => {
   return (
-    <div className="w-full px-[5%] md:px-[10%] animate-fade-in-up flex flex-col lg:h-screen h-auto min-h-[600px] justify-center py-10 sm:py-16 lg:pt-2 lg:pb-12 element-section">
+    <div className="w-full px-[4%] md:px-[5%] lg:px-[12%]  animate-fade-in-up flex flex-col lg:h-screen h-auto min-h-[600px] justify-center py-10 sm:py-16 lg:pt-2 lg:pb-12 element-section">
       {/* Header Content */}
       <motion.div
         className="mb-8 sm:mb-12 lg:mb-12"
@@ -64,7 +64,7 @@ const DigitalTwinSection = () => {
 
     max-w-[95%] 
     sm:max-w-[90%] 
-    md:max-w-[80%] 
+    md:max-w-[100%] 
     lg:max-w-[900px] 
     xl:max-w-[1071px]
 
